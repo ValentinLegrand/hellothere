@@ -1,0 +1,162 @@
+body{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    background: -webkit-linear-gradient(left, rgb(0, 0, 0) 20px, transparent 1%) center, -webkit-linear-gradient(#000 20px, transparent 1%) center, #000;
+    background: linear-gradient(90deg, #000 20px, transparent 1%) center, linear-gradient(#000 20px, transparent 1%) center, #212121;
+    background-size: 22px 22px;
+    opacity: 0,5;
+    font-family: 'Montserrat';
+    color: white;
+}
+
+.header{
+    max-width: 1200px;
+    width:100%;
+    margin: auto;
+}
+
+.nameBitch{
+    font-family: 'Montserrat';
+    font-size: 60px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: white;
+    margin-left: 5vmin;
+    animation: 1.5s ease-in-out 0s 1 SlideFromTop;
+    margin-top: 180px;
+
+}
+
+.profil{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-left: 6vmin;
+    margin-right: 4vmin;
+    margin-top: 10px;
+    animation: 1.5s ease-in-out 0s 1 SlideFromTop;
+}
+
+.dribbbleIcon{
+    width: 20px;
+    vertical-align: middle;
+    margin-left: 12px;
+}
+
+.dribbbleIcon:hover{
+    animation: 300ms ease-out 0s 1 pop;
+}
+
+.behanceIcon{
+    width: 20px;
+    vertical-align: middle;
+    margin-left: 15px;
+
+}
+
+.behanceIcon:hover{
+    animation: 300ms ease-out 0s 1 pop;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes SlideFromTop {
+    0% {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1; 
+    }
+}
+
+.bar1{
+    background: linear-gradient(to right,#4776e6, #8e54e9);
+    width: 50px;
+    height: 3px;
+    display: inline-block;
+    margin-left: 2vmin;
+    vertical-align: middle;
+}
+
+.mainContent{
+    max-width: 1200px;
+    width:100%;
+    margin: auto;
+    margin-top: 20vh;
+    animation: 1000ms ease-in-out 0s 1 SlideFromBottom;
+}
+
+@keyframes SlideFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1; 
+    }
+}
+
+.projetsFlex{
+    margin-left: 6vmin;
+    display: flex;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+button{
+    background-color: transparent;
+    border:none;
+    outline: none;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.arrowR{
+    margin-left: 15px;
+    width: 20px;
+    vertical-align: middle;
+    opacity: 0;
+}
+
+button:hover .arrowR{
+    animation: 400ms ease-in-out 0s 1 SlideFromLeft;
+    opacity: 1;
+}
+
+a:hover{
+    font-weight: 400;
+}
+
+@keyframes SlideFromLeft {
+    0% {
+        transform: translateX(-80%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1; 
+    }
+}
+
+.projectsSection{
+    margin-top: 60vh;
+}
